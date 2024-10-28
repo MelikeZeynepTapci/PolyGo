@@ -78,42 +78,42 @@
         </div>
       </nav>
 
-      <div class="container-flex">
-        <div class="container">
-          <div class="row" style="height: 100px;"></div>
-          <div class="row">
-              <div class="col mx-3">
-                  <div class="row">
-                      <div class="col-4"></div>
-                      <div class="col-4 mb-4">
-                          <h1 class="russo-one-regular-title">poly<span class="highlight">Go</span></h1>
-                      </div>
-                      <div class="col-4"></div>
-                  </div>
-                  <div class="row">
-                      <h4 class="share-tech-mono-regular">
-                          Welcome to polyGo, the personalized way to learn a new language!
-                          Each lesson is crafted around your interests and goals, making every step engaging and relevant.
-                          Practice real-world scenarios, track your progress, and celebrate as you grow from beginner to confident communicator with polyGo!
-                      </h4>
-                  </div>
-                  <div class="row">
-                      <div class="col-4"></div>
-                      <div class="col-4">
-                         <a href="{{ url_for('main.login') }}" class="btn btn-style">
-                                <span>GET STARTED</span>
-                            </a>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col">
 
-                      </div>
-                      <div class="col-4"></div>
-                  </div>
+            <form>
+              <div class="form-group col-md-6 mb-4">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              <div class="col">
-                  <img height="500" src="../static/assets/world.png">
-
+              
+              <div class="form-group col-md-6 mb-4">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
+              
+              <div class="form-group form-check col-md-6 mb-4">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+              
+              <a href="{{ url_for('main.login') }}" class="btn btn-style" style="width: 150px; height:60px;">
+                <span style="margin-top:10px">Log In</span>
+              </a>
+            </form>
+            
+            
+          </div>
+          <div class="col">
+            <img src="../static/assets/tutor.png" width="400" alt="">
           </div>
         </div>
+      </div>
+
+  
+
+
 
         <div class="container">
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -127,7 +127,7 @@
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
               <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
             </ul>
-
+          </footer>
         </div>
       </div>
 
